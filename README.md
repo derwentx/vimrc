@@ -2,6 +2,8 @@
 
 Derwent's fork of [aimx](https://github.com/amix/)' Ultimate Vimrc.
 
+I've modified the vimrc to suit my needs as a python / php developer
+
 Here are the original README intro:
 
 >   Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
@@ -101,6 +103,8 @@ Remove all clutter and focus only on the essential. Similar to iA Writer or Writ
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired): Some really useful keybindings for quickly changing options, buffers etc.
 * [vim-misc](https://github.com/xolox/vim-misc): Required for vim-session
 * [vim-session](https://github.com/xolox/vim-session): Extended session management for Vim
+* [indentpython](https://github.com/vim-scripts/indentpython.vim): Python indentation
+* [youcompleteme](https://github.com/Valloric/YouCompleteMe): Auto completion
 
 ## Included color schemes
 

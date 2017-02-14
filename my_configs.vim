@@ -35,3 +35,44 @@ augroup END " }
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set gfn=Source\ Code\ Pro\ for\ Powerline:h12
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Python Stuff
+" As per https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+highlight BadWhitespace ctermbg=red guibg=red
+
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+    \ set nu
+
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g :YcmCompleter GoToDefinition<CR>
+
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Web Stuff
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+    \ set nu
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Clipboard stuff
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set clipboard=unnamed
+

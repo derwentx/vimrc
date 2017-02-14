@@ -65,6 +65,12 @@ Options
 | `:set {opt}+={val}` | Append to value of **opt** |
 | `:echo &{opt}` | access **opt** as variable |
 
+Debugging VIM
+----
+| Cmd | Result |
+| --- | --- |
+| `:messages` | last few error messages |
+
 NERDTREE
 ====
 handy lil cheatsheet: https://www.cheatography.com/stepk/cheat-sheets/vim-nerdtree/

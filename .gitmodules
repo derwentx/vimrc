@@ -13,3 +13,15 @@
 [submodule "sources_non_forked/minibufexpl.vim"]
 	path = sources_non_forked/minibufexpl.vim
 	url = https://github.com/fholgado/minibufexpl.vim
+[submodule "sources_non_forked/indentpython.vim"]
+	path = sources_non_forked/indentpython.vim
+	url = https://github.com/vim-scripts/indentpython.vim
+[submodule "sources_non_forked/YouCompleteMe"]
+	path = sources_non_forked/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "sources_non_forked/conque.vim"]
+	path = sources_non_forked/conque.vim
+	url = https://github.com/wkentaro/conque.vim
+[submodule "sources_non_forked/vim-tmux-navigator"]
+	path = sources_non_forked/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
