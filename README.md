@@ -97,7 +97,10 @@ Remove all clutter and focus only on the essential. Similar to iA Writer or Writ
 * [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
 * [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim
-
+* [auto-pairs](https://github.com/jiangmiao/auto-pairs): Automatically insert matching pairs of parens etc. can be toggled with `<leader>ap` 
+* [vim-unimpaired](https://github.com/tpope/vim-unimpaired): Some really useful keybindings for quickly changing options, buffers etc.
+* [vim-misc](https://github.com/xolox/vim-misc): Required for vim-session
+* [vim-session](https://github.com/xolox/vim-session): Extended session management for Vim
 
 ## Included color schemes
 
@@ -321,6 +324,15 @@ Vimscript mappings:
     map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
     map <leader>n :cn<cr>
     map <leader>p :cp<cr>
+
+## Known issues
+
+There is an [known incompability](https://github.com/xolox/vim-session/issues/16) between miniBufExplorer and vim-sessions,
+just hit `,o` `,o` every time you open a session that had MiniBufExplorer open when it was last saved and it fixes this.
+
+## Other useful stuff
+
+Check out [my notes](https://github.com/derwentx/vimrc/blob/master/ultimate_macvim_notes.md) for a detailed list of keyboard shortcuts i personally found useful. 
 
 ## How to uninstall
 Do following:
