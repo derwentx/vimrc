@@ -1,13 +1,24 @@
-# The Ultimate vimrc
+# Derwent's Ultimate vimrc
 
-Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
+Derwent's fork of [aimx](https://github.com/amix/)' Ultimate Vimrc.
 
-There are two versions:
+Here are the original README intro:
 
-* **Basic**: If you want something small just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) into your ~/.vimrc and you will have a great basic setup
-* **Awesome**: This includes a ton of useful plugins, color schemes and configurations
+>   Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
+>
+>   There are two versions:
+>
+>   * **Basic**: If you want something small just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) into your ~/.vimrc and you will have a great basic setup
+>   * **Awesome**: This includes a ton of useful plugins, color schemes and configurations
+>
+>   I would of course recommend using the awesome version.c
 
-I would of course recommend using the awesome version.c
+## Requirements
+
+You will need to have a font installed that is patched for powerline to make use of my awesome lightline config: see [here](https://github.com/powerline/fontpatcher) for more info. 
+I use [Sauce Code](https://github.com/powerline/fonts) in this config but you can replace this with your own font in **my_configs.vim**.
+
+This does limit compatibility with things outside of mac, and it hasn't been tested on other platforms so just be aware of that.
 
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
@@ -15,7 +26,8 @@ The awesome version includes a lot of great plugins, configurations and color sc
 	git clone https://github.com/amix/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
-I also recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it
+~~I also recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it~~
+See requirements for info about font stuff
 
 ## How to install the Basic version?
 The basic version is basically just one file and no plugins. You can check out [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim).
