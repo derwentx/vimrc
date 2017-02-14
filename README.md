@@ -271,7 +271,8 @@ Bash like keys for the command line:
     cnoremap <C-P> <Up>
     cnoremap <C-N> <Down>
 
-Write the file as sudo (only on Unix). Super useful when you open a file and you don't have permissions to save your changes. [Vim tip](http://vim.wikia.com/wiki/Su-write):
+~~Write the file as sudo (only on Unix). Super useful when you open a file and you don't have permissions to save your changes. [Vim tip](http://vim.wikia.com/wiki/Su-write):~~ 
+Had to disable because of errors when loading config:
 
     :W 
 
