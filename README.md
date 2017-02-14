@@ -67,7 +67,8 @@ I recommend reading the docs of these plugins to understand them better. Each of
 
 * [pathogen.vim](https://github.com/tpope/vim-pathogen): Manages the runtime path of the plugins
 * [snipMate.vim](https://github.com/garbas/vim-snipmate): snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim
-* [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Buffer Explorer / Browser. This plugin can be opened with `<leader+o>`
+* ~~[bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Buffer Explorer / Browser. This plugin can be opened with `<leader+o>`~~
+* [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Mini Buffer Explorer! I much prefer this to BufExplorer. Remapped to `<leader+o>`
 * [NERD Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim
 * [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for the Perl module / CLI script 'ack'
 * [ag.vim](https://github.com/rking/ag.vim): A much faster Ack
@@ -125,9 +126,10 @@ Now you have vim-rails installed ;-)
 
 ### Plugin related mappings
 
-Open [bufexplorer](https://github.com/vim-scripts/bufexplorer.zip) and see and manage the current buffers (`<leader>o`):
+~~Open [bufexplorer](https://github.com/vim-scripts/bufexplorer.zip) and see and manage the current buffers (`<leader>o`):~~
+Toggle [minibufexpl](https://github.com/fholgado/minibufexpl.vim) 
     
-    map <leader>o :BufExplorer<cr>
+    map <leader>o :MBEToggle<cr>
 
 Open [MRU.vim](https://github.com/vim-scripts/mru.vim) and see the recently open files (`<leader>f`):
 
