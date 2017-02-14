@@ -1,0 +1,15 @@
+[submodule "sources_non_forked/vim-session"]
+	path = sources_non_forked/vim-session
+	url = https://github.com/xolox/vim-session
+[submodule "sources_non_forked/vim-misc"]
+	path = sources_non_forked/vim-misc
+	url = https://github.com/xolox/vim-misc
+[submodule "sources_non_forked/vim-unimpaired"]
+	path = sources_non_forked/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "sources_non_forked/auto-pairs"]
+	path = sources_non_forked/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "sources_non_forked/minibufexpl.vim"]
+	path = sources_non_forked/minibufexpl.vim
+	url = https://github.com/fholgado/minibufexpl.vim
