@@ -28,3 +28,6 @@
 [submodule "sources_non_forked/vim-surround"]
 	path = sources_non_forked/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "sources_non_forked/vim-gitgutter"]
+	path = sources_non_forked/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
