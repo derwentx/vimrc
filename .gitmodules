@@ -19,9 +19,12 @@
 [submodule "sources_non_forked/YouCompleteMe"]
 	path = sources_non_forked/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
-[submodule "sources_non_forked/conque.vim"]
-	path = sources_non_forked/conque.vim
-	url = https://github.com/wkentaro/conque.vim
 [submodule "sources_non_forked/vim-tmux-navigator"]
 	path = sources_non_forked/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "sources_non_forked/lightline.vim"]
+	path = sources_non_forked/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "sources_non_forked/vim-surround"]
+	path = sources_non_forked/vim-surround
+	url = https://github.com/tpope/vim-surround
