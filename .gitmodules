@@ -31,3 +31,18 @@
 [submodule "sources_non_forked/vim-gitgutter"]
 	path = sources_non_forked/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "sources_non_forked/ctrlp.vim"]
+	path = sources_non_forked/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "sources_non_forked/nerdtree"]
+	path = sources_non_forked/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "sources_non_forked/nerdtree-git-plugin"]
+	path = sources_non_forked/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "sources_non_forked/vim-nerdtree-syntax-highlight"]
+	path = sources_non_forked/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+[submodule "sources_non_forked/vim-devicons"]
+	path = sources_non_forked/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons

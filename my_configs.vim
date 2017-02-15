@@ -34,7 +34,7 @@ augroup END " }
 " => Font
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set gfn=Source\ Code\ Pro\ for\ Powerline:h12
+" set gfn=Source\ Code\ Pro\ for\ Powerline:h12
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Python Stuff
