@@ -6,6 +6,14 @@
 
 
 """"""""""""""""""""""""""""""
+" => Disable some plugins
+""""""""""""""""""""""""""""""
+let g:pathogen_disabled = []
+
+call add(g:pathogen_disabled, 'nerdtree-git-plugin')
+" call add(g:pathogen_disabled, '')
+
+""""""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
 call pathogen#infect('~/.vim_runtime/sources_forked/{}')
@@ -315,4 +323,4 @@ let g:syntastic_check_on_wq = 0
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
-nnoremap <silent> <leader>d :GitGutterToggle<cr>
+nnoremap <silent> <leader>i :GitGutterToggle<cr>

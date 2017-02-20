@@ -34,7 +34,7 @@ augroup END " }
 " => Font
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" set gfn=Source\ Code\ Pro\ for\ Powerline:h12
+set gfn=Knack\ Nerd\ Font:h14
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Python Stuff
@@ -76,3 +76,9 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 set clipboard=unnamed
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Handy Mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" deletes buffer but keeps window splits in tact
+map <C-c> :BD<cr>
