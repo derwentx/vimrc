@@ -1,14 +1,21 @@
-Derwent's notes for vim using Ultimate vimrc: https://github.com/amix/vimrc
-from within macvim: https://github.com/macvim-dev/macvim
-Userful cheatsheet: https://vim.rtorr.com/
+Derwent's notes for vim using [Ultimate vimrc](https://github.com/derwentx/vimrc):
+Mostly within [iTerm2](https://www.iterm2.com)
+and sometimes from within [macvim](https://github.com/macvim-dev/macvim)
+Other Useful cheatsheets:
+ - https://vim.rtorr.com/
+ - https://www.fprintf.net/vimCheatSheet.html
 
 LEDGEND
 ====
-In this document I use the same symbols as Vim help, except I use some extra unicode symbols as a shorthand for stuff 
+In this document I use the same symbols as Vim help, except I use some extra unicode symbols as a shorthand for stuff
 
 | Symbol | Meaning |
 | --- | --- |
 | `★` | &lt;leader&gt; key, usually '\' key but but ',' in ultimate vimrc |
+| `<S-{key}>` | Shift-**key** |
+| `<C-{key}>` | Control-**key** |
+| `<A-{key}>` | Alt-**key** |
+| `<D-{key}>` | <span style="color:blue">Super-**key** (macOS Only) |
 
 UNFUCKING THINGS
 ====
@@ -16,12 +23,13 @@ Simple ways to fix confusing mistakes made by a Vim beginner
 
 | Key | Cmd | Result |
 | --- | --- | --- |
-| `⎋`, `q`, `<C-C>` |  | Just keep pressing these until you get back to normal mode on a bugger and go from there |
+| `⎋`, `q`, `<C-c>` |  | Just keep pressing these until you get back to normal mode on a bugger and go from there |
 |   | `:e #` | When you accidentally do a `★e`, got back to the previous buffer that was being edited |
 |   | `:set hls!` | When you accidentally turn on search highlight |
 | `^w c` | `:winc c` | Close current window (Doesn't accidentally quit vim) |
 | `^w =` | `:wincmd =` | Make all windows the same width / height |
-| `<C-O>` |  | Reverse cursor motion (see :jumplist)|
+| `<C-o>` |  | Reverse cursor motion (see :jumplist)|
+| `gv` |  | Go to the last visual selection, for when you fuck up something in the middle of a visual selection |
 
 HELP
 ===
@@ -71,25 +79,6 @@ Debugging VIM
 | --- | --- |
 | `:messages` | last few error messages |
 
-NERDTREE
-====
-handy lil cheatsheet: https://www.cheatography.com/stepk/cheat-sheets/vim-nerdtree/
-
-| Key | Cmd | Result |
-| --- | --- | --- |
-| `,nn` | `:NERDTreeToggle` |  |
-| `?` |  | Show nerdtree help |
-| `m a` |   | open Filesystem Menu, Add child node |
-| `s <C-W> r` |   | open file in new split window, swap window order |
-
-BUFFEXPLORER
-====
-| Key | Cmd | Result |
-| --- | --- | --- |
-| `★be`,`★o` | :BuffExplorer | Opens BuffExplorer in current window |
-| `★bs` | :BuffExplorer | Opens BuffExplorer in newly split window |
-| `★bv` | :BuffExplorer | Opens BuffExplorer in newly split window |
-
 BUFFERS, TABS, WINDOWS
 ====
 Buffer: in-memory text of a file
@@ -107,15 +96,16 @@ Buffers
 |   | `:split {filename}` | edit filename in new horizontally split window |
 |   | `:vnew` | Create new empty buffer in new vertically split window |
 |   | `:vsplit {filename}` | edit filename in new horizontally split window |
-| ★o | `:BufExplorer` | explore list of buffers | 
+| ★o | `:BufExplorer` | explore list of buffers |
 | ★bd  | `:Bclose` | Close buffer |
-| {N}b | `:b {N}` | Go to buffer **N** | 
+| {N}b | `:b {N}` | Go to buffer **N** |
 
 Tabs
 ----
 | Key | Cmd | Result |
 | --- | --- | --- |
-| `★tn`, `<M-T>` | `:tabnew` | Create a new empty tab |
+| `★tn` | `:tabnew` | Create a new empty tab |
+| `<D-T>` | `:tabnew` | Create a new empty tab |
 | `★to` | `:tabonly` | close all other tabs |
 | `★tc` | `:tabclose` |  |
 | `★tm` | `:tabmove` |  |
@@ -125,12 +115,13 @@ Window Commands
 ----
 | Key | Cmd | Result |
 | --- | --- | --- |
-| `<C-W>[{N}]{+/-/</>}` | `:[{N}]winc {+/-/</>}` | adjust window height / width **N** lines |
+| `<C-W>[N]{+/-/</>}` | `:[N]winc {+/-/</>}` | adjust window height / width **N** lines |
 | `<C-{h/j/k/l}`, `<C-W>{H/J/L/K}` | `:winc {H/J/K/L}` | move current window to far left / down / up / right |
-| `<C-W>[{N}]{h/j/l/k}` | `:[{N}]winc {h/j/l/k}` | go to the **N**th left / down / up / right window |
-| `<C-W>[{N}]{w/W}` | `:[{N}]winc {w/W}` | Go to **N**th prev / next window (wraps) |
-| `<C-W>[{N}]{r/R}` | `:[{N}]winc {r/R}` | Rotate the windows upwards / downwards **N** times |
-| <code>&lt;C-W&gt;[{N}]{&lowbar;/&#124;}</code> | <code>:[{N}]winc {&lowbar;/&#124;}</code> | Set the height of window to **N** (default: largest possible)
+| `<C-W>[N]{h/j/l/k}` | `:[N]winc {h/j/l/k}` | go to the **N**th left / down / up / right window |
+| `<C-W>[N]{w/W}` | `:[N]winc {w/W}` | Go to **N**th prev / next window (wraps) |
+| `<C-W>[N]{r/R}` | `:[N]winc {r/R}` | Rotate the windows upwards / downwards **N** times |
+| `<C`
+| <code>&lt;C-W&gt;[N]{&lowbar;/&#124;}</code> | <code>:[N]winc {&lowbar;/&#124;}</code> | Set the height of window to **N** (default: largest possible)
 
 MOTION
 ====
@@ -157,11 +148,11 @@ Operators
 | `c` | `:c[hange]` | Change (delete then enter INSERT) along given motion **N** times |
 | `g{~/u/U/q/?/@}` | `:g[lobal]` | Transform the text with togglecase / lowercase / uppercase / format / rot13 / operatorfunc |
 | `!` | `:!` | Filter through external program |
-| `{</>}` | `:{</>}` | Shift (indent) left / right | 
+| `{</>}` | `:{</>}` | Shift (indent) left / right |
 
 Repeat op to work on current line
 
-| `dd`/`yy`/`cc` | delete / yank / change current line | 
+| `dd`/`yy`/`cc` | delete / yank / change current line |
 | `D`/`C` | delete / change til end of line |  
 
 Modifiers
@@ -172,7 +163,7 @@ These only work in `o` mode
 | --- | --- |
 | `v` | Forces the operator to work **characterwise**. If motion **linewise** then becomes **exclusive** |
 | `V` | Forces the operator to be **linewise** |
-| `<C-V>` | Force operator to work **blockwise** | 
+| `<C-V>` | Force operator to work **blockwise** |
 
 Left-right Motion
 ----
@@ -186,7 +177,7 @@ These work in `n`, `v` and `o` modes.
 | `$`,`★→`, `↦` | Move to end of line | `incl.` |
 | `g0`, `g↤` | Move to first character of screen line | `excl.` |
 | `g^` | First non-blank character of the screen line | `excl.` |
-| `gm` | Middle of screen line | | 
+| `gm` | Middle of screen line | |
 | `{N}g_` | Move [ **N** - 1 ] screen lines downward and to the last non-blank character | `incl.` |
 | `{N}g$`, `{N}g↦` | Move [ **N** - 1 ] screen lines down and last character of screen line | `incl.` |
 
@@ -209,18 +200,23 @@ TODO: Finish this
 Word Motion
 ----
 | Key |  Result | Properties |
-| --- | --- | --- | 
-| `{N}{w/b}`, `<S-⇆>` | **N** words forward / backward | `excl.` |
-| `{N}{W/B}`, `<A-⇆>` | **N** WORDs forward / backward | `excl.` |
-| `{N}{e/ge}` | **N** words forward / backward | `incl.` |
-| `{N}{E/gE}` | **N** WORDS forward / backward | `incl.` |
+| --- | --- | --- |
+| `[N]` `w` / `[N]` `b`, `<S-⇆>`  <td rowspan="2"> **N** words forward / backward  <td rowspan="2"> `excl.` |
+| `<S-⇠>` / `<S-⇢>` |  
+| `[N]` `W` / `[N]` `B` | **N** WORDs forward / backward | `excl.` |
+| `<A-h>` / `<A-l>` | <td rowspan="2"><span style="color:blue">**N** WORDs forward / backward | `excl.` |
+| `<A-⇠>` / `<A-⇢>`
+| `[N]{e/ge}` | **N** words forward / backward | `incl.` |
+| `[N]{E/gE}` | **N** WORDS forward / backward | `incl.` |
 
 Text Object Motions
 ----
 | Key |  Result | Properties |
 | --- | --- | --- |
-| `{N}{(/)}` | **N** sentences forward / backward | `excl.` |
-| `{N}{{/}}`, `<A-⇅>` | **N** paragraphs forward / backward | `excl.` |
+| `[N]` `(` / `[N]` `)`  | **N** sentences forward / backward | `excl.` |
+| `[N]` `{` / `[N]` `}` | **N** paragraphs forward / backward | `excl.` |
+| `[N]` `<A-j>` / `[N]` `<A-k>`  <td rowspan="2"><span style="color:blue">**N** paragraphs forward / backward</td><td rowspan="2"> `excl.` |
+| `[N]` `<A-⇡>` / `[N]` `<A-⇣>`  
 
 Text Object Selection
 ----
@@ -259,12 +255,12 @@ When used in Visual mode:
 | `<`, `>` | &lt;&gt; block | `excl.`, `char.` in `v` |
 | `t` | tag block | `excl`, `char.` in `v` |
 | `{`, `}`, `B` | BLOCK | `excl.`, `char.` in `v` |
-| `"`, `'`, <code>`</code> | quoted string | 
+| `"`, `'`, <code>`</code> | quoted string |
 
 Other Useful Motions
 ----
 | Key |  Result | Properties |
-| --- | --- | --- | 
+| --- | --- | --- |
 | `{N}{H/L}` | **N** lines from the top / bottom | `line.` |
 | `M` | middle line of window | `line.` |
 
@@ -279,7 +275,7 @@ Scrolling Vertically
 | --- | --- |
 | `{N}<C-{E/Y}>` | Scroll window **N** lines upward / downward |
 | `<C-{U/D}>` | Scroll window up / down half a page |
-| `<C-{B/F}>`, `<S-⇅>`, `{↥/↧}` | Scroll window back / forward a page |
+| `<C-{B/F}>` , `<S-{⇡/⇣}>`, `{⇞/⇟}` | Scroll window back / forward a page |
 
 Scrolling Relative To Cursor
 ----
@@ -292,30 +288,39 @@ Scrolling Relative To Cursor
 INSERT
 ====
 help: `:h insert`
-Commands available in insert mode
 
+Entering Insert Mode
+----
 | Key | Result |
 | --- | --- |
-| `<C-W>` | Delete word before cursor | 
-| `<C-U>` | Delete all entered characters before cursor in current line. if no entered characters, delete all characters before the cursor in current line. |
-| `<C-V>x{hex}` | Insert character with hex value **hex** |
-| `<C-M>` | Begin a new line |
-| `<C-D>` | Delete one level of indent in current line. |
-| `<C-{E/Y}` | Insert the character that is above / below the cursor |
-| `<C-O>` | do one command and go back into insert mode. |
+| `a`	| Append text after the cursor [count] times.
+| `A`	| Append text at the end of the line [count] times.
+| `i`	| Insert text before the cursor [count] times.
+| `I`	| Insert text before the first non-blank in the line [count] times.
+| `gI`| Insert text in column 1 [count] times.
+| `o`	| Begin a new line below the cursor and insert text, repeat [count] times.
+| `O`	| Begin a new line above the cursor and insert text, repeat [count] times.
 
 Insert completion
 ----
 | Key | Result |
 | --- | --- |
 | `<C-X><C-L>` | Line completion |
-| `<C-X><C-{N/P}>` | Keyword completion: search forwards / backwards | 
+| `<C-X><C-{N/P}>` | Keyword completion: search forwards / backwards |
 | `<C-N>` | Everything completion |
 
 
-
-Entering Insert Mode
+Insert Mode Commands
 ----
+| Key | Result |
+| --- | --- |
+| `<C-W>` | Delete word before cursor |
+| `<C-U>` | Delete all entered characters before cursor in current line. if no entered characters, delete all characters before the cursor in current line. |
+| `<C-V>x{hex}` | Insert character with hex value **hex** |
+| `<C-M>` | Begin a new line |
+| `<C-D>` | Delete one level of indent in current line. |
+| `<C-{E/Y}` | Insert the character that is above / below the cursor |
+| `<C-O>` | do one command and go back into insert mode. |
 
 
 CHANGE
@@ -334,6 +339,7 @@ COMMAND LINE MAPPING
 
 Search
 ----
+`:h substitute`
 - Search word under cursor
 - Replace next few occurences:
     `*` = search for next occurence
@@ -347,16 +353,6 @@ Other Useful Stuff
 ----
 - Join block of lines:
 
-Systastic
-====
-| key | Cmd | Result |
-| --- | --- | --- |
-|   | `:Errors` | Open errors window | 
-
-Suggested Mappings
-====
-| key | mapped to |
-| --- | --- |
 
 MACROS
 ====
@@ -365,8 +361,6 @@ MACROS
 | `q{register}{commands}q` | Record macro in **register** |
 | `@{register}` | Playback macro in **register** |
 
-
-
 MARKS
 ====
 | key | mapped to |
@@ -374,3 +368,43 @@ MARKS
 | m{register} | store mark in **register** |
 | `{register} | go to mark in **register** |
 
+Systastic
+====
+| key | Cmd | Result |
+| --- | --- | --- |
+|   | `:Errors` | Open errors window |
+
+SURROUNDS
+====
+Commands
+----
+| Key | Result |
+| --- | --- |
+| `ds{surround}` | Delete surrounding **surround** |
+| `cs{surround_old}{surround_new}` | Change surrounding **surround_old** for **surround_new** |
+
+Targets
+----
+| Key | Result |
+| --- | --- |
+| `"`, `'`, <code>`</code> | surround in / select in pair of character |
+| `<{tag}>` / t | Surround in / select balanced tags |
+| `(`
+NERDTREE
+====
+handy lil cheatsheet: https://www.cheatography.com/stepk/cheat-sheets/vim-nerdtree/
+
+| Key | Cmd | Result |
+| --- | --- | --- |
+| `,nn` | `:NERDTreeToggle` |  |
+| `?` |  | Show nerdtree help |
+| `m a` |   | open Filesystem Menu, Add child node |
+| `s <C-W> r` |   | open file in new split window, swap window order |
+
+BUFFEXPLORER
+====
+| Key | Cmd | Result |
+| --- | --- | --- |
+| `★be`,`★o` | :BuffExplorer | Opens BuffExplorer in current window |
+| `★bs` | :BuffExplorer | Opens BuffExplorer in newly split window |
+| `★bv` | :BuffExplorer | Opens BuffExplorer in newly split window |

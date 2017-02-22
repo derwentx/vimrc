@@ -82,3 +82,18 @@ set clipboard=unnamed
 
 " deletes buffer but keeps window splits in tact
 map <C-c> :BD<cr>
+
+" Meta- up / down goes a paragraph back / forward
+" These are not really in the spirit of vim though
+" nmap <Esc>[1;9A {
+" imap <Esc>[1;9A <C-o>{
+" nmap <Esc>[1;9B }
+" imap <Esc>[1;9B <C-o>}
+
+" Meta- h/k goes back forward WORD / word
+" imap <Esc>h <S-Left>
+" nmap <Esc>h <S-Left>
+" imap <Esc>l <S-Right>
+" nmap <Esc>l <S-Right>
+
+

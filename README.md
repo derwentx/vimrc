@@ -336,3 +336,9 @@ Check out [my notes](https://github.com/derwentx/vimrc/blob/master/ultimate_macv
 Do following:
 * Remove `~/.vim_runtime`
 * Remove any lines that refernce `.vim_runtime` in your `~/.vimrc`
+
+## TODO:
+
+- update lightline config to correctly name MiniBufExplorer
+- map auto-pairs toggle to <leader>ap
+- Check if buffer has been edited remotely
