@@ -8,3 +8,6 @@ tags
 .DS_Store
 
 -MiniBufExplorer-
+*.vim.swp
+*.vim.swo
+undo/*.vim
