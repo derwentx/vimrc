@@ -61,3 +61,9 @@
 [submodule "colors/solarized"]
 	path = colors/solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "colors/mayansmoke"]
+	path = colors/mayansmoke
+	url = https://github.com/vim-scripts/mayansmoke
+[submodule "colors/peaksea"]
+	path = colors/peaksea
+	url = https://github.com/vim-scripts/peaksea
