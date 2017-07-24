@@ -11,3 +11,6 @@ tags
 *.vim.swp
 *.vim.swo
 undo/*.vim
+backups/*
+swaps/*
+undo/*
