@@ -16,8 +16,8 @@ call add(g:pathogen_disabled, 'nerdtree-git-plugin')
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-call pathogen#infect('~/.vim/sources_forked/{}')
-call pathogen#infect('~/.vim/sources_non_forked/{}')
+call pathogen#infect('~/.vim/bundle/{}')
+call pathogen#infect('~/.vim/bundle/{}')
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""

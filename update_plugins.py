@@ -56,7 +56,7 @@ lightline.vim https://github.com/itchyny/lightline.vim
 
 GITHUB_ZIP = '%s/archive/master.zip'
 
-SOURCE_DIR = path.join(path.dirname(__file__), 'sources_non_forked')
+SOURCE_DIR = path.join(path.dirname(__file__), 'bundle')
 
 
 def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):

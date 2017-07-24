@@ -136,7 +136,7 @@ After you have installed the setup you can create **~/.vim/my_configs.vim** to f
 You can also install your own plugins, for instance, via pathogen we can install [vim-rails](https://github.com/tpope/vim-rails):
 
 	cd ~/.vim
-	git clone git://github.com/tpope/vim-rails.git sources_non_forked/vim-rails
+	git clone git://github.com/tpope/vim-rails.git bundle/vim-rails
 
 Now you have vim-rails installed ;-)
 

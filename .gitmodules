@@ -1,48 +1,48 @@
-[submodule "sources_non_forked/vim-session"]
-	path = sources_non_forked/vim-session
+[submodule "bundle/vim-session"]
+	path = bundle/vim-session
 	url = https://github.com/xolox/vim-session
-[submodule "sources_non_forked/vim-misc"]
-	path = sources_non_forked/vim-misc
+[submodule "bundle/vim-misc"]
+	path = bundle/vim-misc
 	url = https://github.com/xolox/vim-misc
-[submodule "sources_non_forked/vim-unimpaired"]
-	path = sources_non_forked/vim-unimpaired
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
-[submodule "sources_non_forked/auto-pairs"]
-	path = sources_non_forked/auto-pairs
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
-[submodule "sources_non_forked/minibufexpl.vim"]
-	path = sources_non_forked/minibufexpl.vim
+[submodule "bundle/minibufexpl.vim"]
+	path = bundle/minibufexpl.vim
 	url = https://github.com/fholgado/minibufexpl.vim
-[submodule "sources_non_forked/indentpython.vim"]
-	path = sources_non_forked/indentpython.vim
+[submodule "bundle/indentpython.vim"]
+	path = bundle/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim
-[submodule "sources_non_forked/YouCompleteMe"]
-	path = sources_non_forked/YouCompleteMe
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
-[submodule "sources_non_forked/vim-tmux-navigator"]
-	path = sources_non_forked/vim-tmux-navigator
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
-[submodule "sources_non_forked/lightline.vim"]
-	path = sources_non_forked/lightline.vim
+[submodule "bundle/lightline.vim"]
+	path = bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
-[submodule "sources_non_forked/vim-surround"]
-	path = sources_non_forked/vim-surround
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "sources_non_forked/vim-gitgutter"]
-	path = sources_non_forked/vim-gitgutter
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-[submodule "sources_non_forked/ctrlp.vim"]
-	path = sources_non_forked/ctrlp.vim
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule "sources_non_forked/nerdtree"]
-	path = sources_non_forked/nerdtree
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "sources_non_forked/nerdtree-git-plugin"]
-	path = sources_non_forked/nerdtree-git-plugin
+[submodule "bundle/nerdtree-git-plugin"]
+	path = bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin
-[submodule "sources_non_forked/vim-nerdtree-syntax-highlight"]
-	path = sources_non_forked/vim-nerdtree-syntax-highlight
+[submodule "bundle/vim-nerdtree-syntax-highlight"]
+	path = bundle/vim-nerdtree-syntax-highlight
 	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
-[submodule "sources_non_forked/vim-devicons"]
-	path = sources_non_forked/vim-devicons
+[submodule "bundle/vim-devicons"]
+	path = bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
