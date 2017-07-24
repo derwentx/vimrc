@@ -46,6 +46,3 @@
 [submodule "sources_non_forked/vim-devicons"]
 	path = sources_non_forked/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
-[submodule "sources_non_forked/vim-bufkill"]
-	path = sources_non_forked/vim-bufkill
-	url = https://github.com/qpkorr/vim-bufkill
