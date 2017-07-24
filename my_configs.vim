@@ -16,10 +16,10 @@ set gdefault
 set binary
 set noeol
 " Centralize backups, swapfiles and undo history
-set backupdir=~/.vim_runtime/backups
-set directory=~/.vim_runtime/swaps
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
 if exists("&undodir")
-	set undodir=~/.vim_runtime/undo
+	set undodir=~/.vim/undo
 endif
 " Don’t create backups when editing files in certain directories
 set backupskip=/tmp/*,/private/tmp/*
