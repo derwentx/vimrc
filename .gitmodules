@@ -43,3 +43,6 @@
 [submodule "bundle/vim-devicons"]
 	path = bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
+[submodule "bundle/goyo.vim"]
+	path = bundle/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
