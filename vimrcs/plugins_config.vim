@@ -17,7 +17,6 @@ call add(g:pathogen_disabled, 'nerdtree-git-plugin')
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
 call pathogen#infect('~/.vim/bundle/{}')
-call pathogen#infect('~/.vim/bundle/{}')
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
@@ -139,12 +138,12 @@ let g:lightline = {
 
 set laststatus=2
 set noshowmode
-let g:lightline.separator = { 'left': "", 'right': "" } 
-let g:lightline.subseparator = { 'left': "", 'right': "" } 
+let g:lightline.separator = { 'left': "", 'right': "" }
+let g:lightline.subseparator = { 'left': "", 'right': "" }
 let g:lightline.active = {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ],
-      \   'right': [ [ 'syntastic', 'lineinfo' ], 
+      \   'right': [ [ 'syntastic', 'lineinfo' ],
       \             ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
       \ }
 let g:lightline.component_function = {

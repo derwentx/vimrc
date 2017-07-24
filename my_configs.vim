@@ -24,9 +24,9 @@ endif
 " Don’t create backups when editing files in certain directories
 set backupskip=/tmp/*,/private/tmp/*
 " Use the Solarized Dark theme
-" set background=dark
-" colorscheme solarized
-" let g:solarized_termtrans=1
+set background=dark
+colorscheme solarized
+let g:solarized_termtrans=1
 " Enable per-directory .vimrc files and disable unsafe commands in them
 set exrc
 set secure
