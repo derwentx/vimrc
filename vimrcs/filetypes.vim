@@ -46,6 +46,12 @@ function! JavaScriptFold()
     setl foldtext=FoldText()
 endfunction
 
+if has("autocmd")
+	" Enable file type detection
+	filetype on
+	" Treat .json files as .js
+	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+endif
 
 """"""""""""""""""""""""""""""
 " => CoffeeScript section
@@ -64,4 +70,14 @@ au FileType gitcommit call setpos('.', [0, 1, 1, 0])
 """"""""""""""""""""""""""""""
 if exists('$TMUX') 
     set term=screen-256color 
+endif
+
+""""""""""""""""""""""""""""""
+" => Markdown section
+""""""""""""""""""""""""""""""
+if has("autocmd")
+	" Enable file type detection
+	filetype on
+	" Treat .md files as Markdown
+	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
