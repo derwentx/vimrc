@@ -1,10 +1,56 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Derwent Vim Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Stuff from dotfiles repo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Make Vim more useful
+set nocompatible
+" Allow cursor keys in insert mode
+set esckeys
+" Optimize for fast terminal connections
+set ttyfast
+" Add the g flag to search/replace by default
+set gdefault
+" Don’t add empty newlines at the end of files
+set binary
+set noeol
+" Centralize backups, swapfiles and undo history
+set backupdir=~/.vim_runtime/backups
+set directory=~/.vim_runtime/swaps
+if exists("&undodir")
+	set undodir=~/.vim_runtime/undo
+endif
+" Don’t create backups when editing files in certain directories
+set backupskip=/tmp/*,/private/tmp/*
+" Use the Solarized Dark theme
+set background=dark
+colorscheme solarized
+let g:solarized_termtrans=1
+" Enable per-directory .vimrc files and disable unsafe commands in them
+set exrc
+set secure
+" Enable line numbers
+set number
+" Highlight current line
+set cursorline
+" Show “invisible” characters
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
+" Enable mouse in all modes
+set mouse=a
+" Don’t reset cursor to start of line when moving around.
+set nostartofline
+" Show the filename in the window titlebar
+set title
+" Show the (partial) command as it’s being typed
+set showcmd
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Disable Ex Mode
-" Ex mode is pretty much useless for me and is confusing for 
+" Ex mode is pretty much useless for me and is confusing for
 " newbies
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map q: :echom "Ex mode disabled"<cr>
@@ -13,7 +59,7 @@ nnoremap Q :echom "Ex mode disabled 12"<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MiniBufExplorer Stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Todo: update lightline config to correctly name MiniBufExplorer 
+" Todo: update lightline config to correctly name MiniBufExplorer
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => AutoPairs Stuff
@@ -29,12 +75,6 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYVIMRC nested source $MYVIMRC
     autocmd BufWritePost *my_configs.vim nested source $MYVIMRC
 augroup END " }
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Font
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-set gfn=Knack\ Nerd\ Font:h14
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Python Stuff
@@ -95,5 +135,3 @@ map <C-c> :BD<cr>
 " nmap <Esc>h <S-Left>
 " imap <Esc>l <S-Right>
 " nmap <Esc>l <S-Right>
-
-
