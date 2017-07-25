@@ -106,8 +106,6 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinition<CR>
 
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Web Stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -140,6 +138,9 @@ augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Vexplore
 augroup END
+
+" toggles a full height netrw explorer left
+map <leader>le :Lexplore <cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Handy Mappings

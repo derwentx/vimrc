@@ -15,6 +15,13 @@ call add(g:pathogen_disabled, 'nerdtree-git-plugin')
 call add(g:pathogen_disabled, 'nerdtree-syntax-highlight')
 " call add(g:pathogen_disabled, '')
 
+if !executable("ctags")
+    call add(g:pathogen_disabled, 'tagbar')
+    call add(g:pathogen_disabled, 'misc')
+    call add(g:pathogen_disabled, 'shell')
+    call add(g:pathogen_disabled, 'easytags')
+endif
+
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
@@ -83,19 +90,6 @@ snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
 """"""""""""""""""""""""""""""
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Nerd Tree
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "right"
-let NERDTreeShowHidden=0
-let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let g:NERDTreeWinSize=35
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark
-map <leader>nf :NERDTreeFind<cr>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-multiple-cursors
