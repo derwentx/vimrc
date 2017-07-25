@@ -1,6 +1,6 @@
 git submodule update --init --recursive
 
-ln -s vimrc-awesome.vim ~/.vimrc
+ln -s ./vimrc.vim ~/.vimrc
 ln -s . ~/.vim
 
 # Install YCM

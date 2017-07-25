@@ -10,13 +10,16 @@
 """"""""""""""""""""""""""""""
 let g:pathogen_disabled = []
 
+call add(g:pathogen_disabled, 'nerdtree')
 call add(g:pathogen_disabled, 'nerdtree-git-plugin')
+call add(g:pathogen_disabled, 'nerdtree-syntax-highlight')
 " call add(g:pathogen_disabled, '')
 
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
 call pathogen#infect('~/.vim/bundle/{}')
+call pathogen#infect('~/.vim/colors/{}')
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
