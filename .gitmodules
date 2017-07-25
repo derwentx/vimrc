@@ -94,3 +94,6 @@
 [submodule "bundle/tabline"]
 	path = bundle/tabline
 	url = https://github.com/mkitt/tabline.vim
+[submodule "bundle/expand-region"]
+	path = bundle/expand-region
+	url = http://github.com/terryma/vim-expand-region
