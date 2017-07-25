@@ -31,8 +31,9 @@ endif
 set backupskip=/tmp/*,/private/tmp/*
 " Use the Solarized Dark theme
 set background=dark
-colorscheme solarized
 let g:solarized_termtrans=1
+let g:solarized_termcolors=16
+colorscheme solarized
 " Enable per-directory .vimrc files and disable unsafe commands in them
 set exrc
 set secure
@@ -53,7 +54,8 @@ set title
 set showcmd
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
-
+" Tmux support mouse
+set ttymouse=xterm2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Disable Ex Mode
 " Ex mode is pretty much useless for me and is confusing for
@@ -121,6 +123,21 @@ au BufNewFile,BufRead *.js, *.html, *.css
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set clipboard=unnamed
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Netrw
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+let g:netrw_list_hide= '.*\.swp$|.*\.pyc$'
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Handy Mappings

@@ -120,7 +120,7 @@ Window Commands
 | `<C-W>[N]{h/j/l/k}` | `:[N]winc {h/j/l/k}` | go to the **N**th left / down / up / right window |
 | `<C-W>[N]{w/W}` | `:[N]winc {w/W}` | Go to **N**th prev / next window (wraps) |
 | `<C-W>[N]{r/R}` | `:[N]winc {r/R}` | Rotate the windows upwards / downwards **N** times |
-| `<C`
+| `<C-W>` `q` | `:winc q` | quit current window
 | <code>&lt;C-W&gt;[N]{&lowbar;/&#124;}</code> | <code>:[N]winc {&lowbar;/&#124;}</code> | Set the height of window to **N** (default: largest possible)
 
 MOTION
@@ -153,7 +153,7 @@ Operators
 Repeat op to work on current line
 
 | `dd`/`yy`/`cc` | delete / yank / change current line |
-| `D`/`C` | delete / change til end of line |  
+| `D`/`C` | delete / change til end of line |
 
 Modifiers
 ----
@@ -202,7 +202,7 @@ Word Motion
 | Key |  Result | Properties |
 | --- | --- | --- |
 | `[N]` `w` / `[N]` `b`, `<S-⇆>`  <td rowspan="2"> **N** words forward / backward  <td rowspan="2"> `excl.` |
-| `<S-⇠>` / `<S-⇢>` |  
+| `<S-⇠>` / `<S-⇢>` |
 | `[N]` `W` / `[N]` `B` | **N** WORDs forward / backward | `excl.` |
 | `<A-h>` / `<A-l>` | <td rowspan="2"><span style="color:blue">**N** WORDs forward / backward | `excl.` |
 | `<A-⇠>` / `<A-⇢>`
@@ -216,7 +216,7 @@ Text Object Motions
 | `[N]` `(` / `[N]` `)`  | **N** sentences forward / backward | `excl.` |
 | `[N]` `{` / `[N]` `}` | **N** paragraphs forward / backward | `excl.` |
 | `[N]` `<A-j>` / `[N]` `<A-k>`  <td rowspan="2"><span style="color:blue">**N** paragraphs forward / backward</td><td rowspan="2"> `excl.` |
-| `[N]` `<A-⇡>` / `[N]` `<A-⇣>`  
+| `[N]` `<A-⇡>` / `[N]` `<A-⇣>`
 
 Text Object Selection
 ----
@@ -390,6 +390,59 @@ Targets
 | `"`, `'`, <code>`</code> | surround in / select in pair of character |
 | `<{tag}>` / t | Surround in / select balanced tags |
 | `(`
+Netrw
+====
+Stolen from https://gist.github.com/t-mart/610795fcf7998559ea80
+Also `:help netrw-quickmap`
+
+| Key | Result |
+| --- | --- |
+| `<F1>` | Causes Netrw to issue help |
+| `<cr>` | Netrw will enter the directory or read the file |
+| `<del>` | Netrw will attempt to remove the file/directory |
+| `-` | Makes Netrw go up one directory |
+| `a` | Toggles between normal display, hiding (suppress display of files matching g:netrw_list_hide) showing (display only files which match g:netrw_list_hide) |
+| `c` | Make browsing directory the current directory |
+| `C` | Setting the editing window |
+| `d` | Make a directory |
+| `D` | Attempt to remove the file(s)/directory(ies) |
+| `gb` | Go to previous bookmarked directory |
+| `gh` | Quick hide/unhide of dot-files |
+| `<c-h>` | Edit file hiding list |
+| `i` | Cycle between thin, long, wide and tree listings |
+| `<c-l>` | Causes Netrw to refresh the directory listing |
+| `mb` | Bookmark current directory |
+| `mc` | Copy marked files to marked-file target directory |
+| `md` | Apply diff to marked files (up to 3) |
+| `me` | Place marked files on arg list and edit them |
+| `mf` | Mark a file |
+| `mh` | Toggle marked file suffices' presence on hiding list |
+| `mm` | Move marked files to marked-file target directory |
+| `mp` | Print marked files |
+| `mr` | Mark files satisfying a shell-style regexp |
+| `mt` | Current browsing directory becomes markfile target |
+| `mT` | Apply ctags to marked files |
+| `mu` | Unmark all marked files |
+| `mx` | Apply arbitrary shell command to marked files |
+| `mz` | Compress/decompress marked files |
+| `o` | Enter the file/directory under the cursor in a new browser window. A horizontal split is used. |
+| `O` | Obtain a file specified by cursor |
+| `p` | Preview the file |
+| `P` | Browse in the previously used window |
+| `qb` | List bookmarked directories and history |
+| `qf` | Display information on file |
+| `r` | Reverse sorting order |
+| `R` | Rename the designed file(s)/directory(ies) |
+| `s` | Select sorting style: by name, time or file size |
+| `S` | Specify suffix priority for name-sorting |
+| `t` | Enter the file/directory under the cursor in a new tab |
+| `u` | Change to recently-visited directory |
+| `U` | Change to subsequently-visited directory |
+| `v` | Enter the file/directory under the cursor in a new browser window. A vertical split is used. |
+| `x` | View file with an associated program |
+| `X` | Execute filename under cursor via system() |
+| `%` | Open a new file in netrw's current directory |
+
 NERDTREE
 ====
 handy lil cheatsheet: https://www.cheatography.com/stepk/cheat-sheets/vim-nerdtree/
