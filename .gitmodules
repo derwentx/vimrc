@@ -97,6 +97,3 @@
 [submodule "bundle/expand-region"]
 	path = bundle/expand-region
 	url = http://github.com/terryma/vim-expand-region
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = https://github.com/wincent/Command-T/
