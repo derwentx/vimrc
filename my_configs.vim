@@ -32,7 +32,7 @@ set backupskip=/tmp/*,/private/tmp/*
 " Use the Solarized Dark theme
 set background=dark
 let g:solarized_termtrans=1
-let g:solarized_termcolors=16
+let g:solarized_termcolors=256
 colorscheme solarized
 " Enable per-directory .vimrc files and disable unsafe commands in them
 set exrc
