@@ -42,7 +42,8 @@ set number
 " Highlight current line
 set cursorline
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set listchars=eol:¬,tab:▸\ ,trail:·,extends:»,precedes:«,nbsp:_
+highlight Search cterm=underline gui=underline ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE
 set list
 " Enable mouse in all modes
 set mouse=a
