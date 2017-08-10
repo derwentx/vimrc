@@ -241,14 +241,16 @@ When used in Visual mode:
   - For non-block objects the area is extended by one object or the white space up to the next object, or both for the "a" objects. The direction in which this happens depends on which side of the Visual area the cursor is. For the block objects the block is extended one level outwards.
 
 Selector          | Result                             | Properties
------------------ | ---------------------------------- | -----------------------
+----------------- | ---------------------------------- | ------------------------
 `{w/W/s/p}`       | word / WORD / sentence / paragraph | `char.` in `v`
 `[`, `]`          | [] block                           | `incl.`, `char.` in `v`
 `(`, `)`, `b`     | block                              | `excl.`, `char.` in `v`
 `<`, `>`          | <> block                           | `excl.`, `char.` in `v`
 `t`               | tag block                          | `excl`, `char.` in `v`
 `{`, `}`, `B`     | BLOCK                              | `excl.`, `char.` in `v`
-`"`, `'`, `` ` `` | quoted string
+`"`, `'`, `` ` `` | quoted string                      |
+`<leader>{w/b/e}` | CamelCase aware `w`, `b`, `e`      | `CamelCaseMotion` plugin
+`_`               | sub-word in snake_case             | `textobj-underscore` plugin
 
 ## Other Useful Motions
 
@@ -337,6 +339,8 @@ Key     | Result
 ## Other Useful Stuff
 
 - Join block of lines:
+- duplicate line: yy$p
+
 
 # MACROS
 

@@ -100,3 +100,9 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = https://github.com/wincent/Command-T/
+[submodule "bundle/camelcase-motion"]
+	path = bundle/camelcase-motion
+	url = https://github.com/bkad/CamelCaseMotion
+[submodule "bundle/textobj-underscore"]
+	path = bundle/textobj-underscore
+	url = https://github.com/lucapette/vim-textobj-underscore

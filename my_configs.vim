@@ -56,7 +56,11 @@ set showcmd
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 " Tmux support mouse
-set ttymouse=xterm2
+if has("mouse_sgr")
+    set ttymouse=sgr
+else
+    set ttymouse=xterm2
+end
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Disable Ex Mode
 " Ex mode is pretty much useless for me and is confusing for
@@ -137,6 +141,7 @@ let g:netrw_hide = 1
 augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Vexplore
+  autocmd VimEnter * :wincmd l
 augroup END
 
 " toggles a full height netrw explorer left
@@ -148,6 +153,11 @@ map <leader>le :Lexplore <cr>
 
 " deletes buffer but keeps window splits in tact
 map <C-c> :BD<cr>
+
+" Search for selection
+vnoremap // y/<C-R>"<CR>
+" Search and replace selection on rest of file
+vnoremap <C-r> "hy:,$%s/<C-r>h//gc<left><left><left>
 
 " Meta- up / down goes a paragraph back / forward
 " These are not really in the spirit of vim though
