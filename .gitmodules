@@ -115,3 +115,9 @@
 [submodule "bundle/editorconfig"]
 	path = bundle/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "bundle/ctrlp_delete"]
+	path = bundle/ctrlp_delete
+	url = https://github.com/j5shi/ctrlp_bdelete.vim
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
