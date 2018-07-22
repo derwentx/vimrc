@@ -109,3 +109,9 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = https://github.com/posva/vim-vue
+[submodule "bundle/editorconfig"]
+	path = bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim
