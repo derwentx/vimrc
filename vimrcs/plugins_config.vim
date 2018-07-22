@@ -8,7 +8,9 @@
 """"""""""""""""""""""""""""""
 " => Disable some plugins
 """"""""""""""""""""""""""""""
-let g:pathogen_disabled = []
+if !exists("g:pathogen_disabled")
+    let g:pathogen_disabled = []
+endif
 
 call add(g:pathogen_disabled, 'nerdtree')
 call add(g:pathogen_disabled, 'nerdtree-git-plugin')
@@ -25,7 +27,9 @@ endif
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-call pathogen#infect('~/.vim/bundle/{}')
+if &loadplugins
+    call pathogen#infect('~/.vim/bundle/{}')
+endif
 call pathogen#infect('~/.vim/colors/{}')
 call pathogen#helptags()
 
@@ -308,7 +312,9 @@ endfunc
 nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+if exists("SyntasticStatuslineFlag")
+    set statusline+=%{SyntasticStatuslineFlag()}
+endif
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
