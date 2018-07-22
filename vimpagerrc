@@ -1,0 +1,24 @@
+if !exists("g:vimpager")
+    let g:vimpager = {}
+endif
+if !exists("g:less")
+    let g:less     = {}
+endif
+""""""""""""""""""""""""""""""
+" => Limit plugins
+""""""""""""""""""""""""""""""
+" call pathogen#infect('~/.vim/colors/{}')
+call pathogen#infect('~/.vim/bundle/tmux-navigator/{}')
+set noloadplugins
+" if !exists("g:pathogen_disabled")
+"     let g:pathogen_disabled = []
+" endif
+" call add(g:pathogen_disabled, 'ctrlp')
+""""""""""""""""""""""""""""""
+" => Disable less compatibility
+""""""""""""""""""""""""""""""
+" let g:less.enabled = 0
+" let g:less.number = 1
+
+
+source ~/.vim/vimrc
