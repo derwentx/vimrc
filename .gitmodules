@@ -1,9 +1,6 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
-[submodule "bundle/minibufexpl.vim"]
-	path = bundle/minibufexpl.vim
-	url = https://github.com/fholgado/minibufexpl.vim
 [submodule "bundle/indentpython.vim"]
 	path = bundle/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim
@@ -13,9 +10,6 @@
 [submodule "bundle/lightline.vim"]
 	path = bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -97,12 +91,21 @@
 [submodule "bundle/expand-region"]
 	path = bundle/expand-region
 	url = http://github.com/terryma/vim-expand-region
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = https://github.com/wincent/Command-T/
 [submodule "bundle/camelcase-motion"]
 	path = bundle/camelcase-motion
 	url = https://github.com/bkad/CamelCaseMotion
 [submodule "bundle/textobj-underscore"]
 	path = bundle/textobj-underscore
 	url = https://github.com/lucapette/vim-textobj-underscore
+[submodule "bundle/textobj-user"]
+	path = bundle/textobj-user
+	url = https://github.com/kana/vim-textobj-user
+[submodule "bundle/tail-bundle"]
+	path = bundle/tail-bundle
+	url = https://github.com/vim-scripts/Tail-Bundle
+[submodule "bundle/vinegar"]
+	path = bundle/vinegar
+	url = https://github.com/tpope/vim-vinegar
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim
